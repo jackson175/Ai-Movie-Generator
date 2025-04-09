@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Movie Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>AI Movie Generator</h1>
+  </header>
+
+  <main>
+    <form id="movieForm">
+      <label for="genre">Genre:</label>
+      <input type="text" id="genre" name="genre" placeholder="e.g., sci-fi" required>
+
+      <label for="theme">Theme:</label>
+      <input type="text" id="theme" name="theme" placeholder="e.g., futuristic adventure" required>
+
+      <button type="submit">Generate Movie</button>
+    </form>
+
+    <section id="result">
+      <h2 id="movieTitle"></h2>
+      <p id="moviePlot"></p>
+      <img id="moviePoster" alt="Generated Movie Poster" style="display:none;">
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
